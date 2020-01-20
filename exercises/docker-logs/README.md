@@ -19,7 +19,7 @@ Retrieve logs until a specific point in time.
 In order to retrieve logs before a specific point in time, run:
 
 ```
-$ docker run -d busybox sh -c 'while true; do $(echo date); sleep 1; done'
+$ docker run -d alpine sh -c 'while true; do $(echo date); sleep 1; done'
 
 $ docker logs <container-id> -f --until=2s
 
