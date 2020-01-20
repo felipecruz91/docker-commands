@@ -17,7 +17,7 @@ $ echo "Hello World" > hello.txt
 Run a new container where the file will be copied to:
 
 ```
-$ docker run --rm -d alpine /bin/sh -c 'sleep 3600'
+$ docker run --rm -it -d alpine /bin/sh
 ```
 
 Copy the file from the host machine to the Docker container:
